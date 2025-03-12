@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'GodOfWar';
+    src: url('https://fonts.cdnfonts.com/s/18485/GODOFWAR.TTF') format('truetype');
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E2E2E;
+    color: #EDEDED;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.header img {
+    height: 60px;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: #1A1A1A;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    border: 2px solid #A52A2A;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid #A52A2A;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #B89E60;
+}
+h1 {
+    font-family: 'GodOfWar', 'Trajan Pro', serif;
+    font-size: 3rem;
+    color: #A52A2A;
+    text-shadow: -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 2px 2px 0px #000, 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #222;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    font-size: 0.8em;
+    font-weight: 200;
+}

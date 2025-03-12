@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTUZI COLLECTIBLES</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/ico" href="./imagens/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./imagens/got.png" alt="Logo da Marca"> <!-- Substitua pelo caminho correto da sua logo -->
+            <h1>ARTUZI COLLECTIBLES</h1>
+        </div>
+        <div class="grid" id="catalogo"></div>
+    </div>
+    
+    <script>
+        const actionFigures = [
+            { nome: "Superman", imagem: src="./imagens/superman.jpeg" },
+            { nome: "Batman", imagem: src="./imagens/batman.jpeg" },
+            { nome: "Spiderman", imagem: src="./imagens/spiderman.jpeg"},
+            { nome: "Goku", imagem: src="./imagens/goku.jpeg"},
+            { nome: "Kratos", imagem: src="./imagens/godofwar.jpeg"}
+        ];
+
+        const catalogo = document.getElementById("catalogo");
+        actionFigures.forEach(figure => {
+            const card = document.createElement("div");
+            card.classList.add("card");
+            card.innerHTML = `
+                <img src="${figure.imagem}" alt="${figure.nome}">
+                <h3>${figure.nome}</h3>
+            `;
+            catalogo.appendChild(card);
+        });
+    </script>
+
+<footer>
+    <span>
+        &copy; Weverton Fernandes da Silva, 2024 - Todos os direitos reservados.
+    </span>
+</footer>
+</body>
+</html>
